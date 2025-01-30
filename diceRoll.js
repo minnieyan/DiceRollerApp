@@ -20,7 +20,7 @@ function diceRoll() {
         for(; diceCount[i] > 0; diceCount[i]--) {
             let randValue = randomRoll(1, diceArray[i]);
             if (justSum) {
-                document.getElementById(`randValue`).innerHTML += `d${diceArray[i]} Roll: ${randValue}\n`;
+                document.getElementById(`randValue`).innerHTML += `d${diceArray[i]} Roll: ${randValue}<br>`;
                 console.log(`d${diceArray[i]} Roll: ${randValue}`);
             }
 
@@ -28,7 +28,7 @@ function diceRoll() {
         }
 
         if (diceSum != 0 && justSum) {
-            document.getElementById(`diceSum`).innerHTML += `Sum of d${diceArray[i]} Rolls: ${diceSum}\n`;
+            document.getElementById(`diceSum`).innerHTML += `Sum of d${diceArray[i]} Rolls: ${diceSum}<br>`;
             console.log(`Sum of d${diceArray[i]} Rolls: ${diceSum}`);
         }
 
