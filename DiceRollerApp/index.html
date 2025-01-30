@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+        <h1>How many dice would you like to roll?</h1>
+        <script src = "diceRoll.js"></script>
+        <form>
+            <label for="d4count">d4</label><br>
+            <input type="number" id="d4count" name="d4count"><br>
+            <label for="d6count">d6</label><br>
+            <input type="number" id="d6count" name="d6count"><br>
+            <label for="d8count">d8</label><br>
+            <input type="number" id="d8count" name="d8count"><br>
+            <label for="d10count">d10</label><br>
+            <input type="number" id="d10count" name="d10count"><br>
+            <label for="d12count">d12</label><br>
+            <input type="number" id="d12count" name="d12count"><br>
+            <label for="d20count">d20</label><br>
+            <input type="number" id="d20count" name="d20count"><br>
+            <label for="d100count">d100</label><br>
+            <input type="number" id="d100count" name="d100count"><br>
+            <input type="button" onclick="diceRoll()" value="Roll!">
+        </form>
+        <p>Do you want a full breakdown? </p>
+        <form>
+            <input type="radio" id="yesbreak" name="breakdown">
+            <label for="yesbreak">Yes</label><br>
+            <input type="radio" id="nobreak" name="breakdown" checked>
+            <label for="nobreak">No</label><br>
+        </form>
+        <p id = "randValue"></p>
+        <p id = "diceSum"></p>
+        <p id = "finalSum"></p>
+    </body>
+</html>
