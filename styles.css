@@ -6,3 +6,18 @@
 body {
     background-color: lightblue;
 }
+
+#countSurvey {
+    width: 300px;
+    margin: auto;
+    border-style: inset;
+    border-color: black;
+}
+
+#rollButton {
+    font-size: 20px;
+}
+
+#finalSum {
+    font-size: 20px;
+}
